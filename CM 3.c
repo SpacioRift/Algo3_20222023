@@ -17,9 +17,12 @@ void entrerNote (int *notes,int *coefficients)
     }
 }
 
-void calcMoy (int *notes, int *coefficients, int *max, int *min, int *note, int *note2, float *moyenne)
+void calcMoy (int *notes, int *coefficients,15
+1)
 {
     int i;
+    int max, min, note, note2;
+    float moyenne = 0;
     for (i = 0; i < 10; i++) {
         moyenne = moyenne + (notes[i] / coefficients[i]);
     }
@@ -52,9 +55,8 @@ void calcMoy (int *notes, int *coefficients, int *max, int *min, int *note, int 
 }
 
 int main (){
-    int notes[10], coefficients[10], max, min, note, note2;
-    float moyenne = 0;
+    int notes[10], coefficients[10];
     entrerNote(&notes, &coefficients);
-    calcMoy(&notes, &coefficients, &max, &min, &note, &note2, &moyenne);
+    calcMoy(&notes, &coefficients);
     return 0;
 }
