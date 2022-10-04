@@ -21,7 +21,17 @@ void saisieEmploye(Employe * e){
     
 };
 
+void afficherEmploye(Employe * e){
+    printf("Nom : %s \n", (*e).nom);
+    printf("Prénom : %s \n", (*e).prenom);
+    printf("Code : %d \n", (*e).code);
+    printf("Salaire : %f \n", (*e).salaire);
+};
+
 int main(){
     Employe e;
     saisieEmploye(&e);
+    afficherEmploye(&e);
+    
+    return 0;
 };
