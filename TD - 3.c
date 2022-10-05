@@ -1,19 +1,25 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-typedef char chaine[15];
-
- void longueur(chaine * c){
+void longueur(char chaine){
+    char *p;
+    p = chaine;
     int i = 0;
-    while(c[i] ! '0'){
-        i++;
+    while(*p != '\0'){
+        printf("%c \n", *p);
+        i = i + 1;
+        p++;
     };
     printf("longueur de la chaine : %d \n", i);
 };
 
-int main(){
-    chaine c;
+void afficheInverse(){
+
+};
+
+int main(int argc, char **argv){
+    char * chaine = "";
     printf("Entrez votre prénom :");
-        scanf("%s", &c);
-    longueur(&c);
+        scanf("%s", &chaine);
+    longueur(chaine);
 };
