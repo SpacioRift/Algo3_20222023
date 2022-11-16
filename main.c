@@ -102,6 +102,6 @@ printf("La somme des entiers du tableau t1 est %d\n",sommeDeux(t1, N));
 printf("Le nombre d'elements du tableau de valeur superieur a 5 est %d\n",valeurSup(t1, N, 0, 5));
 indicesDesc(t1, N, N-1);
 printf("L'indice de la valeur 7 est %d\n",rechNonTrie(t1, N, 0, 7));
-printf("L'indice de la valeur 5 est %d\n",rechDicho(t2, N, 0, 1));
+printf("L'indice de la valeur 5 est %d\n",rechDicho(t2, N, 0, 5));
 return 0;
 }
