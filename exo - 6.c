@@ -10,7 +10,7 @@ int rechDicho(Tab t, int n , int i, int v){
         }
         else
         {
-            res = rechNonTrie(t, n, i+1, v);
+            res = rechDicho(t, n, i+1, v);
         }
     }
     return res;
